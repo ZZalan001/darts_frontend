@@ -38,7 +38,9 @@ return (
                             <Link to={darts.profile_url} target="_blank">Profil link</Link><br />
                             <Link to={"/darts/"+darts.id}><img src={darts.image_url ? darts.image_url : "https://via.placeholder.com/400x800"}
                             alt={darts.name} className="img-fluid" style={{maxHeight : 200}} /><br />
-                            <i className="bi bi-three-dots" data-bs-toggle="tooltip" title="Részletek"></i></Link>
+                            <i className="bi bi-three-dots" data-bs-toggle="tooltip" title="Részletek"></i></Link>&nbsp;&nbsp;&nbsp;
+                            <Link to={"/darts-modify/" + darts.id}><i className="bi bi-pencil-square fs-6 "></i></Link>&nbsp;&nbsp;&nbsp;
+                            <Link to={"/darts-delete/" + darts.id}><i className="bi bi-trash3 fs-6  "></i></Link><br /><br />
                         </div>
                     </div>
                 ))}

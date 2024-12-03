@@ -40,6 +40,7 @@ return (
                 alt={darts.name} style={{ maxHeight: "250px"}} className="img-fluid" />
             </div>
             <Link to="/"><i className="bi bi-backspace-fill"></i></Link>
+            <Link to={"/darts-modify/" + darts.id}><i className="bi bi-pencil-square fs-5"></i></Link>
             </div>
         )}
     </div>
